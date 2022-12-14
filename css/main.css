@@ -1,0 +1,106 @@
+:root {
+    --orang-color: #e64d00;
+    --orangb-color: #ff884d;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    background-color: var(--orang-color);
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: -300px;
+    top: 0px;
+    transition: .35s;
+}
+
+nav img {
+    border: var(--orangb-color) 7px solid;
+    width: 130px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+#nav-s.active{
+    left: 0px;
+}
+
+
+nav ul li svg{
+    color:white
+}
+nav ul li:first-child svg:hover{
+    color: #3b5998
+}
+nav ul li:nth-child(3) svg:hover{
+    color: black
+}
+nav ul li:nth-child(2) svg:hover{
+    color: #2867B2
+}
+nav ul li:last-child svg:hover{
+    color: #25D366
+}
+span .ico {
+    color: var(--orang-color);
+}
+
+.landing {
+    background-image: url(../img/lakosha-mop.jpg);
+    background-size: cover;
+}
+
+@media (min-width:768px) {
+    main {
+        width: calc(100% - 300px);
+        transform: translateX(300px);
+    }
+    .landing {
+        background-image: url(../img/lakosha.jpg);
+    }
+    nav{
+        left: 0px;
+    }
+
+}
+.landing .hei{
+    height: 100vh;
+}
+@keyframes blink{
+from{visibility:visible}
+to{visibility: hidden}}
+
+.landing .blinking-cursor{
+user-select: none;
+animation: blink 1s steps(2, start) infinite;
+}
+
+.landing .my-pio{
+    width: 340px;
+}
