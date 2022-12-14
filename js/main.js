@@ -14,7 +14,7 @@ async function init () {
     
     await sleep(1000)
     node.innerText = ""
-    await node.type('I`m a,')
+    await node.type('I`m ,')
     
     while (true) {
       await node.type('Designer')

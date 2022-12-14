@@ -74,6 +74,7 @@ span .ico {
 .landing {
     background-image: url(../img/lakosha-mop.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 @media (min-width:768px) {
@@ -83,6 +84,9 @@ span .ico {
     }
     .landing {
         background-image: url(../img/lakosha.jpg);
+        background-size: 1630px;
+        margin-left: 300px;
+        background-position: right center;
     }
     nav{
         left: 0px;
@@ -91,6 +95,7 @@ span .ico {
 }
 .landing .hei{
     height: 100vh;
+    color: var(--orang-color);
 }
 @keyframes blink{
 from{visibility:visible}
@@ -103,4 +108,15 @@ animation: blink 1s steps(2, start) infinite;
 
 .landing .my-pio{
     width: 340px;
+}
+#type-text{
+    border-bottom: 3px solid var(--orang-color);
+}
+.about .p-header::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 50px;
+    background-color: var(--orang-color);
+    bottom: 0;
 }
