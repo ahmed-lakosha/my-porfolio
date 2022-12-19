@@ -17,7 +17,7 @@
     />
     <title>lakosha-portfolio</title>
   </head>
-  <body>
+  <body  data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
     <nav class="" id="nav-s">
       <div class="container">
         <div class="text-center">
@@ -49,11 +49,24 @@
               ></a>
             </li>
           </ul>
+          <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-start">
+            <a class="p-2 rounded fs-4 text-white" href="#about">About</a>
+            <a class="p-2 rounded fs-4 text-white" href="#facts">Facts</a>
+            <a class="p-2 rounded fs-4 text-white" href="#skills">Skills</a>
+            <a class="p-2 rounded fs-4 text-white" href="#resume">Resume</a>
+            <a class="p-2 rounded fs-4 text-white" href="#portfolio">Portfolio</a>
+            <a class="p-2 rounded fs-4 text-white" href="#website">Website</a>
+            <a class="p-2 rounded fs-4 text-white" href="#contact">Contact</a>
+          </div>
+          <div class="text-center fs-6 text-white copy">
+            &COPY; Copyright <span class="fw-bold">iPortfolio</span> <br>
+            Designed by <span class="text-black">BootstrapMade</span>
+          </div>
         </div>
       </div>
     </nav>
     <button
-      class="close-btn navbar-toggler float-end m-1 sticky-top p-1 d-md-none d-none"
+      class="close-btn navbar-toggler float-end sticky-top p-3 d-md-none d-none"
       type="button"
     >
       <span class="navbar-toggler-icon"
@@ -61,27 +74,28 @@
       </span>
     </button>
     <button
-      class="open-btn navbar-toggler float-end m-1 sticky-top p-1 d-md-none"
+      class="open-btn navbar-toggler float-end sticky-top p-3 d-md-none"
       type="button"
     >
       <span class="navbar-toggler-icon"
         ><i class="fa-solid fa-bars-staggered ico"></i>
       </span>
     </button>
-    <section class="landing">
-      <div
-        class="hei d-flex flex-wrap flex-column justify-content-center align-content-center fw-bold w-100"
-      >
-        <h1 class="">Ahmed Lakosha</h1>
-        <div class="d-flex fs-1 my-pio">
-          <span class="mt-1" is="type-async" id="type-text"></span>
-          <span class="blinking-cursor mt-1">|</span>
+    <section class="landing" id="landing">
+      <div class="visp">
+        <div
+          class="hei d-flex flex-wrap flex-column justify-content-center align-content-center fw-bold w-100"  id="text"
+        >
+          <h1 class="">Ahmed Lakosha</h1>
+          <div class="d-flex fs-1 my-pio">
+            <span class="mt-1" is="type-async" id="type-text"></span>
+            <span class="blinking-cursor mt-1">|</span>
+          </div>
         </div>
-        </h1>
       </div>
     </section>
     <main>
-      <div class="about bg-white py-5">
+      <div class="about bg-white py-5" id="about">
         <div class="container-fluid">
           <div class="text-heading">
             <div class="p-header position-relative">
@@ -149,8 +163,336 @@
           </div>
         </div>
       </div>
+      <button class="scrol-btn navbar-toggler float-end sticky-top p-3 fs-4" type="button">
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-angles-up"></i>
+        </span>
+      </button>
+      <div class="facts py-5" id="facts">
+        <div class="container-fluid">
+          <div class="text-heading">
+            <div class="p-header position-relative">
+              <h2 class="py-3">Facts</h2>
+            </div>
+            <p class="text-black-50 fs-5 pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="f-cord col-xl-3 col-md-6 d-flex p-5">
+              <i class="fa-regular fa-face-kiss-wink-heart me-3"></i>
+              <div class="d-flex flex-column">
+                <h1>377</h1>
+                <p class="text-black-50 fs-5"><span class="fw-bold text-black">Happy Clients</br></span>consequuntur quae.</p>
+              </div>
+            </div>
+            <div class="f-cord col-xl-3 col-md-6 d-flex p-5">
+              <i class="fa-solid fa-list-check me-3"></i>
+              <div class="d-flex flex-column">
+                <h1>731</h1>
+                <p class="text-black-50 fs-5"><span class="fw-bold text-black">Projects</br></span> adipisci atque cum quia aut.</p>
+              </div>
+            </div>
+            <div class="f-cord col-xl-3 col-md-6 d-flex p-5">
+              <i class="fa-solid fa-headset me-3"></i>
+              <div class="d-flex flex-column">
+                <h1>1307</h1>
+                <p class="text-black-50 fs-5"><span class="fw-bold text-black">Hours Of Support</br></span>aut commodi quaerat.</p>
+              </div>
+            </div>
+            <div class="f-cord col-xl-3 col-md-6 d-flex p-5">
+              <i class="fa-solid fa-person-circle-check me-3"></i>
+              <div class="d-flex flex-column">
+                <h1>37</h1>
+                <p class="text-black-50 fs-5"><span class="fw-bold text-black">Hard Workers</br></span>rerum asperiores dolor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills py-5" id="skills">
+        <div class="container-fluid">
+          <div class="text-heading">
+            <div class="p-header position-relative">
+              <h2 class="py-3">Skills</h2>
+            </div>
+            <p class="text-black-50 fs-5 pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+                <div class="data-s text-black-50 fw-bold py-3">
+                  <h6 class="text-uppercase">html</h6>
+                  <div class="data-w w-100 position-relative" data-prog="100%">
+                    <span class="data-i d-block" style="width:100%"></span>
+                  </div>
+                </div>
+                <div class="data-s text-black-50 fw-bold py-3">
+                  <h6 class="text-uppercase">css</h6>
+                  <div class="data-w w-100 position-relative" data-prog="95%">
+                    <span class="data-i d-block" style="width:95%"></span>
+                  </div>
+                </div>
+                <div class="data-s text-black-50 fw-bold py-3">
+                  <h6 class="text-uppercase">javascript</h6>
+                  <div class="data-w w-100 position-relative" data-prog="77%">
+                    <span class="data-i d-block" style="width:77%"></span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="data-s text-black-50 fw-bold py-3">
+                  <h6 class="text-uppercase">bootstrap</h6>
+                  <div class="data-w w-100 position-relative" data-prog="90%">
+                    <span class="data-i d-block" style="width:90%"></span>
+                  </div>
+                </div>
+                <div class="data-s text-black-50 fw-bold py-3">
+                  <h6 class="text-uppercase">photoshop</h6>
+                  <div class="data-w w-100 position-relative" data-prog="47%">
+                    <span class="data-i d-block" style="width:47%"></span>
+                  </div>
+                </div>
+                <div class="data-s text-black-50 fw-bold py-3">
+                  <h6 class="text-uppercase">pithon</h6>
+                  <div class="data-w w-100 position-relative" data-prog="30%">
+                    <span class="data-i d-block" style="width:30%"></span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="resume py-5" id="resume">
+        <div class="container-fluid">
+          <div class="text-heading">
+            <div class="p-header position-relative">
+              <h2 class="py-3">Resume</h2>
+            </div>
+            <p class="text-black-50 fs-5 pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="py-3">Sumary</h3>
+              <div class="prag-line text-black-50 fs-5 position-relative ps-4">
+                <h4 class="text-black position-relative">Ahmed Lakosha</h4>
+                <p class="">Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</p>
+                <ul class="bs-3">
+                  <li class="position-relative">eygpt,cairo,new cairo</li>
+                  <li class="position-relative">+20 (101) 070-1022</li>
+                  <li class="position-relative">1ahmed.lakosha94@gmail</li>
+                </ul>
+              </div>
+              <h3 class="py-3">Education</h3>
+              <div class="prag-line text-black-50 fs-5 position-relative ps-4">
+                <h4 class="text-black position-relative">MASTER OF engneering</h4>
+                <span class="px-3 pb-1 pt-2">2015 - 2016</span>
+                <p class="mb-3">Rochester Institute of mansora, engneering uni</p>
+                <p class="">Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend.</p>
+              </div>
+              <div class="prag-line text-black-50 fs-5 position-relative ps-4">
+                <h4 class="text-black position-relative">BACHELOR OF FINE ARTS & GRAPHIC DESIGN</h4>
+                <span class="px-3 pb-1 pt-2">2010 - 2014</span>
+                <p class="mb-3">Rochester Institute of mansora, engneering uni</p>
+                <p class="">Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="py-3">Professional Experience</h3>
+              <div class="prag-line text-black-50 fs-5 position-relative ps-4">
+                <h4 class="text-black position-relative">SENIOR GRAPHIC DESIGN SPECIALIST</h4>
+                <span class="px-3 pb-1 pt-2">2019 - Present</span>
+                <p class="mb-3">Experion, New York, NY</p>
+                <p class="">Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</p>
+                <ul class="bs-3">
+                  <li class="position-relative">Lead in the design, development, and implementation of the graphic, layout, and production communication materials.</li>
+                  <li class="position-relative">Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                  <li class="position-relative">Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design.</li>
+                  <li class="position-relative">Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                </ul>
+              </div>
+              <div class="prag-line text-black-50 fs-5 position-relative ps-4">
+                <h4 class="text-black position-relative">GRAPHIC DESIGN SPECIALIST</h4>
+                <span class="px-3 pb-1 pt-2">2017 - 2021</span>
+                <p class="mb-3">Stepping Stone Advertising, New York, NY</p>
+                <ul class="bs-3">
+                  <li class="position-relative">Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                  <li class="position-relative">Managed up to 5 projects or tasks at a given time while under pressure.</li>
+                  <li class="position-relative">Recommended and consulted with clients on the most appropriate graphic design.</li>
+                  <li class="position-relative">Created 4+ design presentations and proposals a month for clients and account managers.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio py-5" id="portfolio">
+        <div class="container-fluid">
+          <div class="text-heading">
+            <div class="p-header position-relative">
+              <h2 class="py-3">Portfolio</h2>
+            </div>
+            <p class="text-black-50 fs-5 pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <ul class="bg-white rounded-pill d-flex justify-content-center p-0" id="por">
+              <li class="text-uppercase fw-bold pt-2 pb-1 px-3 fs-5 active" role="button" data-imgs="*">all</li>
+              <li class="text-uppercase fw-bold pt-2 pb-1 px-3 fs-5" role="button" data-imgs="app">app</li>
+              <li class="text-uppercase fw-bold pt-2 pb-1 px-3 fs-5" role="button" data-imgs="bug">bug</li>
+              <li class="text-uppercase fw-bold pt-2 pb-1 px-3 fs-5" role="button" data-imgs="web">web</li>
+            </ul>
+          </div>
+          <div class="row justify-content-center text-center fs-1">
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative app"><img src="img/app1.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative web"><img src="img/web1.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative bug"><img src="img/bug1.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative web"><img src="img/web2.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative app"><img src="img/app2.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative bug"><img src="img/bug2.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative web"><img src="img/web3.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative app"><img src="img/app3.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative bug"><img src="img/bug3.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative web"><img src="img/web4.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative app"><img src="img/app4.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 bg-tranceparent p-3 bot-i position-relative web"><img src="img/web5.jpg" alt="" class="img-fluid"><a class="sconn" href="#"><i class="fa-solid fa-link"></i></a><a class="scon" href="#"><i class="fa-solid fa-plus"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="services py-5" id="services">
+        <div class="container-fluid">
+          <div class="text-heading">
+            <div class="p-header position-relative">
+              <h2 class="py-3">Services</h2>
+            </div>
+            <p class="text-black-50 fs-5 pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-start">
+              <i class="fa-solid fa-briefcase fs-3 p-3 m-2 rounded-circle"></i>
+              <div class="d-flex flex-column">
+                <h4 class="p-2 mt-2">Lorem Ipsum</h4>
+                <p class="text-black-50">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-start">
+              <i class="fa-solid fa-wand-magic-sparkles fs-3 p-3 m-2 rounded-circle"></i>
+              <div class="d-flex flex-column">
+                <h4 class="p-2 mt-2">Dolor Sitema</h4>
+                <p class="text-black-50">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-start">
+              <i class="fa-brands fa-docker fs-3 p-3 m-2 rounded-circle"></i>
+              <div class="d-flex flex-column">
+                <h4 class="p-2 mt-2">Sed ut perspiciatis</h4>
+                <p class="text-black-50">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-start">
+              <i class="fa-solid fa-fire fs-3 p-3 m-2 rounded-circle"></i>
+              <div class="d-flex flex-column">
+                <h4 class="p-2 mt-2">Magni Dolores</h4>
+                <p class="text-black-50">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-start">
+              <i class="fa-regular fa-snowflake fs-3 p-3 m-2 rounded-circle"></i>
+              <div class="d-flex flex-column">
+                <h4 class="p-2 mt-2">Nemo Enim</h4>
+                <p class="text-black-50">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-start">
+              <i class="fa-solid fa-puzzle-piece fs-3 p-3 m-2 rounded-circle"></i>
+              <div class="d-flex flex-column">
+                <h4 class="p-2 mt-2">Eiusmod Tempor</h4>
+                <p class="text-black-50">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="website py-5" id="website">
+        <div class="container-fluid"> 
+          <div class="text-heading">
+            <div class="p-header position-relative">
+              <h2 class="py-3">Website</h2>
+            </div>
+            <p class="text-black-50 fs-5 pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 bg-white p-0">
+              <iframe src="https://ahmed-lakosha.github.io/HTML-CSS-template-2/"  width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+            </div>
+            <div class="col-md-6 bg-white p-0">
+              <iframe src="https://ahmed-lakosha.github.io/template-3/"  width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+            </div>
+            <div class="col-md-6 bg-white p-0">
+              <iframe src="https://ahmed-lakosha.github.io/html-css-template-4/"  width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+            </div>
+            <div class="col-md-6 bg-white p-0">
+              <iframe src="https://ahmed-lakosha.github.io/bootstrap/"  width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact py-5" id="contact">
+        <div class="container"> 
+          <div class="text-heading">
+            <div class="p-header position-relative">
+              <h2 class="py-3">Contact</h2>
+            </div>
+            <p class="text-black-50 fs-5 pb-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+          <div class="row gap-2 justify-content-evenly">
+            <div class="col-md-4 d-flex flex-column p-4">
+              <div class="d-flex text">
+                <i class="fa-regular fa-compass fs-3 p-3 m-2 rounded-circle"></i>
+                <div class="">
+                  <h3 class="mt-2 mb-0">Location:</h3>
+                  <p class="fs-5 text-black-50">eygpt,cairo,new cairo</p>
+                </div>
+              </div>
+              <div class="d-flex text">
+                <i class="fa-solid fa-at fs-3 p-3 m-2 rounded-circle"></i>
+                <div class="">
+                  <h3 class="mt-2 mb-0">Email:</h3>
+                  <p class="fs-5 text-black-50">ahmed.lakosha94@gmail.com</p>
+                </div>
+              </div>
+              <div class="d-flex text">
+                <i class="fa-solid fa-phone fs-3 p-3 m-2 rounded-circle"></i>
+                <div class="">
+                  <h3 class="mt-2 mb-0">Call:</h3>
+                  <p class="fs-5 text-black-50">+20 (101) 070-1022</p>
+                </div>
+              </div>
+              <div class="w100">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5812.799356409946!2d31.533571851982323!3d29.970485932375688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1671444224090!5m2!1sen!2seg" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-4"></iframe>
+              </div>
+            </div>
+            <div class="col-md-7 p-4">
+              <form action="action" method="get"  class="d-flex flex-column">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="userName" class="d-block">Your Name</label>
+                    <input type="text" name="userName" id="userName" class="w-100" >
+                  </div>
+                  <div class="col-6">
+                    <label for="email" class="d-block">Your Email</label>
+                    <input type="email" name="email" id="email" class="w-100" >
+                  </div>
+                </div>
+                <label for="subject" class="d-block">Subject</label>
+                <input type="text" name="subject" id="subject" class="w-100">
+                <label for="message" class="d-block">Message</label>
+                <textarea name="message" id="message" class="w-100"></textarea>
+                <input type="submit" value="Send Message" class="m-5 rounded fs-5 px-4 mx-auto pt-1">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -1,122 +1,373 @@
 :root {
-    --orang-color: #e64d00;
-    --orangb-color: #ff884d;
+  --orang-color: #e64d00;
+  --orangb-color: #ff9560;
+  --bg-color: #e64d0017;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
-    scroll-behavior: smooth;
-    font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-    color: inherit;
+  color: inherit;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav {
-    background-color: var(--orang-color);
-    width: 300px;
-    height: 100vh;
-    position: fixed;
-    left: -300px;
-    top: 0px;
-    transition: .35s;
+  background-color: var(--orang-color);
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  left: -300px;
+  top: 0px;
+  transition: 0.35s;
+  z-index: 2000000;
 }
 
 nav img {
-    border: var(--orangb-color) 7px solid;
-    width: 130px;
+  border: var(--orangb-color) 7px solid;
+  width: 130px;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
-#nav-s.active{
-    left: 0px;
+#nav-s.active {
+  left: 0px;
 }
 
-
-nav ul li svg{
-    color:white
+nav ul li svg {
+  color: white;
 }
-nav ul li:first-child svg:hover{
-    color: #3b5998
+nav ul li:first-child svg:hover {
+  color: #3b5998;
 }
-nav ul li:nth-child(3) svg:hover{
-    color: black
+nav ul li:nth-child(3) svg:hover {
+  color: black;
 }
-nav ul li:nth-child(2) svg:hover{
-    color: #2867B2
+nav ul li:nth-child(2) svg:hover {
+  color: #2867b2;
 }
-nav ul li:last-child svg:hover{
-    color: #25D366
+nav ul li:last-child svg:hover {
+  color: #25d366;
+}
+nav .copy {
+  margin-top: 115px;
 }
 span .ico {
-    color: var(--orang-color);
+  color: var(--orang-color);
 }
 
 .landing {
-    background-image: url(../img/lakosha-mop.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(../img/lakosha-mop.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-@media (min-width:768px) {
-    main {
-        width: calc(100% - 300px);
-        transform: translateX(300px);
-    }
-    .landing {
-        background-image: url(../img/lakosha.jpg);
-        background-size: 1630px;
-        margin-left: 300px;
-        background-position: right center;
-    }
-    nav{
-        left: 0px;
-    }
+@media (min-width: 768px) {
+  main {
+    width: calc(100% - 300px);
+    transform: translateX(300px);
+  }
 
-}
-.landing .hei{
-    height: 100vh;
-    color: var(--orang-color);
-}
-@keyframes blink{
-from{visibility:visible}
-to{visibility: hidden}}
+  .landing {
+    background-image: url(../img/lakosha.jpg);
+    background-size: 1630px;
+    margin-left: 300px;
+    background-position: right center;
+  }
 
-.landing .blinking-cursor{
-user-select: none;
-animation: blink 1s steps(2, start) infinite;
+  nav {
+    left: 0px;
+  }
 }
 
-.landing .my-pio{
-    width: 340px;
+#simple-list-example .active {
+  transition: 0.35s;
+  color: black !important;
 }
-#type-text{
-    border-bottom: 3px solid var(--orang-color);
+
+#simple-list-example a:hover {
+  transition: 0.35s;
+  color: black !important;
 }
-.about .p-header::before{
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 50px;
-    background-color: var(--orang-color);
-    bottom: 0;
+
+.landing .visp {
+  height: 100vh;
+}
+
+@keyframes vesible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.landing .hei {
+  height: 100%;
+  color: var(--orang-color);
+  animation: vesible 1s linear;
+}
+
+@keyframes blink {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+.landing .blinking-cursor {
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+.landing .my-pio {
+  width: 340px;
+}
+
+#type-text {
+  border-bottom: 3px solid var(--orang-color);
+}
+
+.scrol-btn {
+  color: var(--orang-color);
+  top: calc(100vh - 60px);
+  animation: vesible 0.7s ease-in-out alternate infinite;
+}
+
+@keyframes skalout {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.skalout {
+  animation: skalout 0.5s ease-in-out 0s forwards;
+}
+
+.p-header::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 50px;
+  background-color: var(--orang-color);
+  bottom: 0;
+}
+
+.facts .f-cord svg {
+  font-size: 70px;
+  color: var(--orang-color);
+}
+
+.facts .f-cord h1 {
+  font-size: 70px;
+}
+
+.skills,
+.portfolio {
+  background-color: var(--bg-color);
+}
+
+.skills .data-s .data-w {
+  height: 10px;
+  background-color: var(--orangb-color);
+}
+
+.skills .data-s .data-w::before {
+  content: attr(data-prog);
+  right: 0;
+  top: -30px;
+  position: absolute;
+}
+
+.skills .data-s .data-w .data-i {
+  background-color: var(--orang-color);
+  height: 100%;
+}
+
+.resume .prag-line span {
+  background-color: var(--orangb-color);
+}
+
+.resume .prag-line::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 105%;
+  background-color: var(--orang-color);
+  left: 3px;
+  top: 5px;
+}
+
+.resume .prag-line h4::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: var(--orang-color) solid 2px;
+  border-radius: 50%;
+  left: -30px;
+  top: 0;
+}
+
+.resume .prag-line ul li::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: var(--orang-color) solid 3px;
+  border-radius: 50%;
+  background-color: var(--orang-color);
+  left: -20px;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.portfolio ul {
+  width: fit-content;
+}
+
+.portfolio ul li {
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.portfolio ul li.active,
+.portfolio ul li:hover {
+  color: var(--orang-color);
+}
+
+.portfolio .bot-i {
+  overflow: hidden;
+}
+
+.portfolio .bot-i::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  visibility: hidden;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(255, 255, 255, 0.315);
+  transition: 0.3s;
+}
+
+.portfolio .bot-i:hover::before {
+  visibility: visible;
+}
+
+.portfolio .bot-i:hover a {
+  bottom: 15px;
+  visibility: visible;
+}
+
+.portfolio .bot-i a:hover {
+  color: var(--orang-color);
+}
+
+.portfolio .bot-i a {
+  position: absolute;
+  width: calc(50% - 1rem);
+  height: 55px;
+  bottom: -60px;
+  color: white;
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+.portfolio .bot-i .scon {
+  right: 1rem;
+}
+
+.portfolio .bot-i .sconn {
+  left: 1rem;
+}
+
+.services svg {
+  color: white;
+  background-color: var(--orang-color);
+  border: 1px solid var(--orang-color);
+  transition: 0.35s;
+}
+
+.services .col-lg-4:hover svg {
+  background-color: white;
+  color: var(--orang-color);
+}
+
+.services h4:hover {
+  color: var(--orang-color);
+  transition: 0.35s;
+}
+
+.contact svg {
+  color: var(--orang-color);
+  background-color: var(--orangb-color);
+  transition: 0.35s;
+}
+
+.contact .text:hover svg {
+  background-color: var(--orang-color);
+  color: white;
+}
+
+.contact .gap-2 > div {
+  box-shadow: 1px 1px 20px 5px #ffcbb1;
+}
+iframe {
+  min-height: 300px;
+}
+
+.website {
+  background-color: var(--bg-color);
+}
+
+.contact form label {
+  font-size: 1.5rem;
+  margin: 0.75rem 0;
+}
+.contact form input:not([type="submit"]) {
+  height: 40px;
+}
+.contact form input[type="submit"] {
+  width: fit-content;
+  height: 50px;
+  outline: none;
+  color: white;
+  background-color: var(--orang-color);
+  border: 1px solid var(--orang-color);
+  transition: 0.35s;
+}
+.contact form input[type="submit"]:hover {
+  background-color: white;
+  color: var(--orang-color);
+}
+.contact form textarea {
+  height: 200px;
 }
